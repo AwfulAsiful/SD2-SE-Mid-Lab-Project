@@ -6,7 +6,7 @@ const historyList = document.getElementById("historyList");
 const shapeData = {
   triangle: {
     label: "Triangle",
-    image: "/assests/triangle.png",
+    image: "./assests/triangle.png",
     inputs: [
       { label: "Base", id: "base" },
       { label: "Height", id: "height" }
@@ -16,7 +16,7 @@ const shapeData = {
   },
   rectangle: {
     label: "Rectangle",
-    image: "/assests/rectangle.png",
+    image: "./assests/rectangle.png",
     inputs: [
       { label: "Length", id: "length" },
       { label: "Width", id: "width" }
@@ -26,14 +26,14 @@ const shapeData = {
   },
   square: {
     label: "Square",
-    image: "/assests/square.png",
+    image: "./assests/square.png",
     inputs: [{ label: "Side", id: "side" }],
     calculate: ({ side }) => side * side,
     formula: ({ side }) => `${side} × ${side}`
   },
   pentagon: {
     label: "Pentagon",
-    image: "/assests/pentagon.png",
+    image: "./assests/pentagon.png",
     inputs: [
       { label: "Side Length", id: "side" },
       { label: "Apothem", id: "apothem" }
@@ -43,7 +43,7 @@ const shapeData = {
   },
   circle: {
     label: "Circle",
-    image: "/assests/circle.png",
+    image: "./assests/circle.png",
     inputs: [{ label: "Radius", id: "radius" }],
     calculate: ({ radius }) => Math.PI * radius * radius,
     formula: ({ radius }) => `π × ${radius}²`
